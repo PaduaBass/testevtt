@@ -1,0 +1,357 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:02.096
+[Música]
+
+00:00:03.559 --> 00:00:06.007
+[Em tela]
+
+00:00:09.426 --> 00:00:11.171
+[Narrador] Olá, seja bem-vindo!
+
+00:00:11.271 --> 00:00:15.601
+Chegou o momento de você aprender
+como construir dicionários aninhados
+
+00:00:15.701 --> 00:00:18.000
+ou seja, dicionários
+que são armazenados
+
+00:00:18.100 --> 00:00:19.789
+em outros dicionários.
+
+00:00:20.182 --> 00:00:25.174
+Bom, é comum o uso de dicionários
+aninhados em comunicação via internet
+
+00:00:25.274 --> 00:00:27.648
+ou programas que resolvem
+algo rápido.
+
+00:00:27.748 --> 00:00:31.363
+Então, é importante que você domine
+essa técnica para aplicá-la
+
+00:00:31.463 --> 00:00:33.387
+com facilidade em sua prática
+
+00:00:33.487 --> 00:00:37.043
+além de aumentar seu repertório
+como programador Python.
+
+00:00:37.301 --> 00:00:40.623
+Para que você compreenda melhor
+como funciona
+
+00:00:40.723 --> 00:00:44.453
+acompanhe a seguir a construção
+de um dicionário aninhado
+
+00:00:44.553 --> 00:00:47.950
+que armazena informações diversas
+acerca de uma família.
+
+00:00:48.083 --> 00:00:49.927
+Para cada membro desta família
+
+00:00:50.027 --> 00:00:52.641
+serão armazenadas
+informações diferentes.
+
+00:00:52.741 --> 00:00:53.942
+Vamos lá?
+
+00:00:55.203 --> 00:00:58.859
+Inicialmente, é importante
+você criar um dicionário vazio
+
+00:00:58.959 --> 00:01:00.640
+em seu ambiente Jupyter
+
+00:01:00.740 --> 00:01:02.875
+e chamá-lo de família.
+Okay?
+
+00:01:03.180 --> 00:01:07.600
+Depois, você deve começar a incluir
+os dados dos membros família.
+
+00:01:07.700 --> 00:01:09.246
+Que tal começar pelo pai?
+
+00:01:09.346 --> 00:01:11.711
+Sendo assim,
+utilize a chave ‘pai’
+
+00:01:11.811 --> 00:01:15.365
+que é uma string para indexar
+um novo dicionário contendo o nome
+
+00:01:15.465 --> 00:01:19.229
+a idade e o passatempo
+deste representante da família.
+
+00:01:19.329 --> 00:01:21.791
+Como exemplo será usado
+a seguinte linha:
+
+00:01:21.891 --> 00:01:26.891
+[Em tela]
+
+00:01:33.917 --> 00:01:36.366
+Após isto,
+siga para os dados da ‘mae’.
+
+00:01:36.466 --> 00:01:40.111
+Desta forma teremos na terceira linha
+dessa mesma célula:
+
+00:01:40.311 --> 00:01:45.311
+[Em tela]
+
+00:01:51.587 --> 00:01:55.967
+Perceba que como foi utilizado
+dicionários para armazenar os dados
+
+00:01:56.067 --> 00:01:59.476
+você pode armazenar qualquer
+informação de um membro da família
+
+00:01:59.576 --> 00:02:03.243
+por exemplo, armazenar
+a profissão da mãe, mas não a do pai.
+
+00:02:03.343 --> 00:02:06.065
+Você não precisa por uma chave
+como um valor nulo
+
+00:02:06.165 --> 00:02:07.782
+para o campo profissão do pai
+
+00:02:07.882 --> 00:02:10.418
+simplesmente não coloque
+informação nenhuma.
+
+00:02:10.518 --> 00:02:14.387
+Com o dicionário, você só armazena
+o que tem interesse de armazenar.
+
+00:02:14.487 --> 00:02:16.026
+Interessante, não acha?
+
+00:02:16.126 --> 00:02:19.476
+Essa é uma das vantagens
+da utilização de dicionários!
+
+00:02:20.559 --> 00:02:23.912
+Depois, continue adicionando
+os dados do ‘filho 01’.
+
+00:02:24.012 --> 00:02:27.720
+Você deve estar se perguntando,
+mas por que colocar uma numeração?
+
+00:02:27.820 --> 00:02:29.937
+Ora, se a família
+tiver mais de um filho
+
+00:02:30.037 --> 00:02:32.351
+e você usar apenas ‘filho’ como chave
+
+00:02:32.451 --> 00:02:35.731
+teria que utilizar uma lista
+para representar mais de um filho.
+
+00:02:35.831 --> 00:02:39.030
+Assim, para facilitar seu trabalho,
+coloque estes números.
+
+00:02:39.130 --> 00:02:42.871
+Então ainda na mesma célula,
+na quarta linha teremos:
+
+00:02:42.971 --> 00:02:47.971
+[Em tela]
+
+00:02:54.406 --> 00:02:56.003
+onde além do nome e da idade
+
+00:02:56.103 --> 00:02:59.104
+teremos uma informação
+sobre o salário desse membro.
+
+00:02:59.204 --> 00:03:04.204
+Por fim, insira os dados do filho 02,
+seguindo a mesma lógica
+
+00:03:04.604 --> 00:03:07.809
+mas dessa vez inserindo
+apenas o nome e a idade
+
+00:03:07.909 --> 00:03:12.097
+que serão, respectivamente,
+João Filho e 17 anos.
+
+00:03:12.197 --> 00:03:17.197
+Finalize a construção do dicionário
+e execute essa célula acessando Run.
+
+00:03:18.619 --> 00:03:21.777
+Em seguida, você deve passar
+para uma nova célula
+
+00:03:21.877 --> 00:03:25.735
+para imprimir todos os dados
+armazenados neste dicionário.
+
+00:03:25.835 --> 00:03:29.432
+Para fazer isto,
+utilize dois laços "for" aninhados
+
+00:03:29.532 --> 00:03:33.016
+o externo itera sobre
+todos os membro da família:
+
+00:03:33.116 --> 00:03:36.039
+pai, mae, filho 01 e filho 02.
+
+00:03:36.139 --> 00:03:39.652
+Já o interno itera
+sobre os dados de cada indivíduo.
+
+00:03:39.752 --> 00:03:43.234
+Imprima a chave e o valor
+em conjunto, um par por linha.
+
+00:03:43.334 --> 00:03:45.426
+Então, o código final deve ser:
+
+00:03:46.228 --> 00:03:50.115
+"for papel, dados", onde "papel"
+vai armazenar as chaves
+
+00:03:50.215 --> 00:03:51.571
+e "dados", os valores
+
+00:03:51.671 --> 00:03:53.996
+nos itens do dicionário "familía"
+faça
+
+00:03:54.096 --> 00:03:56.956
+usando "print" imprima
+a string formatada:
+
+00:03:57.056 --> 00:03:59.711
+(‘Dados do(a) {}:
+
+00:03:59.811 --> 00:04:03.257
+com o campo que será substituído
+pelo dado armazenado em papel
+
+00:04:03.357 --> 00:04:06.958
+e depois inicie um novo laço "for"
+para ocupar "chave"
+
+00:04:07.058 --> 00:04:09.409
+e "dado" nos itens
+do dicionário "dados"
+
+00:04:09.509 --> 00:04:14.117
+usando "print", imprima
+a string formatada com dois campos
+
+00:04:14.217 --> 00:04:18.506
+que serão substituídos pelos valores
+de "chave" e "dado", respectivamente.
+
+00:04:19.480 --> 00:04:21.776
+Por fim, execute esta última célula
+
+00:04:21.876 --> 00:04:25.094
+e verifique se todos os dados
+são impressos corretamente.
+
+00:04:25.194 --> 00:04:28.168
+Você poderá analisar
+cada um dos membros da família
+
+00:04:28.268 --> 00:04:30.829
+e comparar com as informações
+que você inserir.
+
+00:04:30.999 --> 00:04:33.749
+Nesse exemplo, teremos
+que os dados do pai são:
+
+00:04:33.849 --> 00:04:38.606
+[Em tela]
+
+00:04:38.770 --> 00:04:42.480
+E assim, serão listados os dados
+de cada um dos membros da família
+
+00:04:42.580 --> 00:04:44.424
+que foi adicionado anteriormente.
+
+00:04:44.524 --> 00:04:47.719
+Porém as informações
+estão muito próximas umas das outras
+
+00:04:47.819 --> 00:04:51.094
+não existe nenhum espaçamento
+entre as linhas impressas.
+
+00:04:51.194 --> 00:04:54.719
+A última dica para melhorar
+visualmente essas informações
+
+00:04:54.819 --> 00:04:57.895
+é incluir uma linha em branco
+entre cada membro da família
+
+00:04:57.995 --> 00:05:01.200
+para que esses dados
+fiquem mais organizados.
+
+00:05:01.300 --> 00:05:04.503
+Para isso, basta incluir
+na última célula que você executou
+
+00:05:04.603 --> 00:05:06.369
+uma linha com "print" vazio.
+
+00:05:06.498 --> 00:05:09.031
+Isso irá gerar um espaço
+entre as informações
+
+00:05:09.131 --> 00:05:10.658
+de cada membro da família.
+
+00:05:10.758 --> 00:05:13.687
+Depois é só executar
+essa célula novamente.
+
+00:05:13.787 --> 00:05:15.402
+Muito melhor, não acha?
+
+00:05:16.741 --> 00:05:21.106
+Como você pôde perceber é bem simples
+construir dicionários aninhados.
+
+00:05:21.206 --> 00:05:23.243
+Agora é a sua vez de praticar.
+
+00:05:23.343 --> 00:05:26.087
+Crie você,
+seus dicionários aninhados
+
+00:05:26.187 --> 00:05:28.615
+a partir dos comandos
+que aprendeu até aqui.
+
+00:05:28.715 --> 00:05:31.612
+Lembre-se que a prática
+leva a perfeição.
+
+00:05:32.432 --> 00:05:34.563
+Bons estudos e até mais!
